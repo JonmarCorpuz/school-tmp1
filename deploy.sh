@@ -8,4 +8,4 @@ curl -LO https://k8s.io/examples/application/wordpress/wordpress-deployment.yaml
 kubectl apply -k ./
 
 #
-kubectl expose pod <POD_NAME> --type=LoadBalancer --port=80 --target-port=8080
+#kubectl expose pod <POD_NAME> --type=LoadBalancer --port=80 --target-port=8080
