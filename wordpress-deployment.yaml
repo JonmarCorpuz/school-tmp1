@@ -6,7 +6,9 @@ metadata:
     app: wordpress
 spec:
   ports:
-    - port: 80
+    - protocol: TCP
+      port: 80
+      targetPort: 80
   selector:
     app: wordpress
     tier: frontend
@@ -48,9 +50,9 @@ spec:
       - image: wordpress:6.2.1-apache
         name: wordpress
         env:
-        - name: WORDPRESS_DB_HOST
+        - name: mysql
           value: wordpress-mysql
-        - name: password123
+        - name: password
           valueFrom:
             secretKeyRef:
               name: mysql-pass
