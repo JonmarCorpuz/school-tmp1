@@ -1,1 +1,1 @@
-
+Utilisez Ansible, Kubernetes et Vagrant pour déployer une architecture de VM comprenant un serveur Active directory, un serveur de messagerie, des clients Windows, Linux. Ce déploiement doit se faire de façon automatique.
